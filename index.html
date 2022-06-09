@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_4</title>
+</head>
+<body>
+    <script>
+
+        // ----- Задание 1 -----
+        // Омг у меня получилось...
+
+        let arr =[];
+        let n = "";
+        sum = 0;
+
+        while (true) {
+            n = prompt(n);
+            arr.push(n);
+            if (n === null || n === "" || !isFinite(n)) {
+                arr.pop(n);
+                break;
+
+            }
+        }
+
+        arr = arr.map(Number);
+
+        for (let i = 0; i < arr.length; i++){
+            sum += arr[i];
+        }
+
+        alert("Сумма всех значений массива: " + sum);
+
+    </script>
+</body>
+</html>
